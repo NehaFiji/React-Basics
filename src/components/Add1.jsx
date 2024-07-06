@@ -5,7 +5,7 @@ const Add1 = ({person}) => {
     const [page,setPage]=useState('Home')
     const[count,setCount]=useState(0);
     const [form,setForm]=useState({
-      name:person.name,
+      movie:person.movie,
       email:person.email,
       password:person.password,
       address:person.address
@@ -35,7 +35,7 @@ const Add1 = ({person}) => {
           id="outlined-required"
           label="Name"
           name='name'
-          value={form.name}
+          value={form.movie}
           onChange={valueCap}
         />
         <TextField
